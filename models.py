@@ -38,6 +38,7 @@ class Cupcake(db.Model):
 
     def serialize(self):
         """ Serialize to dictionary """
+        # TODO: can we go through the keys programmatically?
 
         return {
             "id": self.id,
