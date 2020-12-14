@@ -38,7 +38,13 @@ class Cupcake(db.Model):
 
     def serialize(self):
         """ Serialize to dictionary """
+
         # TODO: can we go through the keys programmatically?
+        # return { 
+        #     k: v for k,v in [self.__dict__.items()] 
+        #     if k != '_sa_instance_state'}
+
+
 
         return {
             "id": self.id,
