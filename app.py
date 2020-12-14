@@ -15,6 +15,12 @@ app.config['SECRET_KEY'] = 'its-a-secret'
 connect_db(app)
 
 
+@app.route("/")
+def show_homepage():
+    """ Renders the homepage """
+
+    return render_template("cupcakes.html")
+
 @app.route("/api/cupcakes")
 def list_cupcakes():
     """ Gets data about all cupcakes """

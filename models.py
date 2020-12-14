@@ -40,9 +40,12 @@ class Cupcake(db.Model):
         """ Serialize to dictionary """
 
         # TODO: can we go through the keys programmatically?
+        # When dealing with APIs, never loop through all the columns
         # return { 
         #     k: v for k,v in [self.__dict__.items()] 
         #     if k != '_sa_instance_state'}
+        # Instead loop through a list of the keys/columns
+
 
 
 
