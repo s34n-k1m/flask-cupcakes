@@ -91,6 +91,13 @@ class CupcakeViewsTestCase(TestCase):
                 }
             })
 
+    def test_get_cupcake_not_found(self):
+        with app.test_client() as client:
+            url = f"/api/cupcakes/{self.cupcake.id + 1}"
+            resp = client.get(url)
+
+            self.assertEqual(resp.status_code, 404)
+
     def test_create_cupcake(self):
         with app.test_client() as client:
             url = "/api/cupcakes"

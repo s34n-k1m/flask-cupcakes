@@ -19,15 +19,15 @@
         <form action="/api/cupcakes" method="POST" id="new-cupcake-form">
             <div class="form-group">
                 <label for="flavor">Flavor</label>
-                <input type="text" class="form-control" id="flavor" placeholder="Enter flavor here">
+                <input type="text" class="form-control" id="flavor" placeholder="Enter flavor here" required>
             </div>
             <div class="form-group">
                 <label for="size">Size</label>
-                <input type="text" class="form-control" id="size" placeholder="Enter size here">
+                <input type="text" class="form-control" id="size" placeholder="Enter size here" required>
             </div>
             <div class="form-group">
                 <label for="rating">Rating</label>
-                <input type="text" class="form-control" id="rating" placeholder="Enter rating here">
+                <input type="text" class="form-control" id="rating" placeholder="Enter rating here" required>
             </div>
             <div class="form-group">
                 <label for="image">Image</label>
@@ -36,6 +36,10 @@
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>
+<!-- NEW FORM -- WIP -->
+    <!-- <div>
+        <form action="" id="search-form"></form>
+    </div> -->
 
     <script src="https://unpkg.com/axios/dist/axios.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
